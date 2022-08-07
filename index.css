@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+ /* general-setting*/  
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #333333;
+}
+nav ul{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul a li{
+color: #ffffff;
+font-size: 16px;
+text-transform: capitalize;
+}
+nav ul a li:hover{
+    color: #ffda1b;
+}
+nav button{
+    margin-right: 50px;
+    border: none;
+    background-color: #ffda1b;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 600PX;
+    background-color: #3b3a3a;
+    background-image: url('PNG/IMG.png');
+    background-size: cover;
+    background-blend-mode:normal;
+    align-items: center;
+    padding: 10px 80px;
+}
+.right{
+    height: 100%;
+    width: 60%;
+    padding:50px 30px;
+}
+.right h1{
+    width: 100%;
+    font-size: 60px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.btn{
+    margin-top: 30px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn img{
+    width: 45%;
+    cursor: pointer;
+}
+.left{
+    background-color: #fdfdfd;
+    width: 500px;
+    border-radius: 20px;
+    padding: 30px 50px;
+    position: relative;
+}
+.left span{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.left form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.left form input[type="text"]{
+    width: 100%;
+    height: 50px;
+    border: 1px  solid #f3f4eb;
+    border-radius: 10px;
+    padding: 0px 50px;
+    outline: none;
+    background-color: #f7f7f8;
+}
+.left form input::placeholder{
+    color: #c6c6c6;
+}
+.left form label{
+    position: relative;
+    margin-top: 10px;
+}
+.left form label img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 20px;
+}
+.left form input[type="radio"]{
+    margin-top: 30px;
+    accent-color: #ffda1b;
+    outline: none;
+    outline-color: #ffda1b;
+    display: none;
+    cursor: pointer;
+}
+.radio {
+    display: flex;
+    justify-content:left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.radio label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #808080;
+    cursor: pointer;
+}
+.radio label:nth-child(2){
+    margin-left: 20px;
+}
+.radio .checked{
+    background-color: #c6c6c6;
+    width: 20px;
+    height: 20px;
+   margin-right: 10px;
+   border-radius: 5000px;
+   position: relative;
+}
+.checked::before{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:#fdfdfd;
+    content: "";
+    border: 4px solid #ffda1b;
+    border-radius: 200px;   
+    box-sizing: border-box; 
+    display: none;
+}
+ .input:checked + .checked::before{
+    display: block;
+}
+.left button{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    color: #3b3a3a;
+    background-color: #ffda1b;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.left .img{
+    width: 50px;
+    height: 50px;
+    background-color: #ffda1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5000px;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+}
+.dices{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+}
+.sub-dices{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.sub-dices:hover{
+    transform: translateY(-10%);
+    height: 400px;
+}
+.sub-dices{
+     width: 25%;
+}
+.sub-dices:nth-child(1){
+    background-color: #3b3a3a;
+}
+.sub-dices:nth-child(2){
+    background-color: #ffda1b;
+}
+.sub-dices:nth-child(3){
+    background-color: #fdfdfd;
+}
+.sub-dices:nth-child(2) h2{
+    color: #3b3a3a;
+}
+.sub-dices:nth-child(2) p{
+    color: #3b3a3a;
+}
+.sub-dices:nth-child(3) h2{
+    color: #3b3a3a;
+}
+.sub-dices:nth-child(3) p{
+    color: #3b3a3a;
+}
+.sub-dices:nth-child(4){
+    background-color: #3b3a3a;
+}
+.sub-dices h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #f7f7f8;
+}
+.sub-dices h2{
+   font-size: 25px;
+   font-weight: 400px;
+   margin-top: 20px;
+   color: #ffffff;
+
+}
+.sub-dices p{
+    font-size: 20px;
+    font-weight: 400px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+@media screen and (max-width :1200px){
+    nav{
+        padding: 10px 20px;
+    }
+    nav img{
+        width: 120px;
+    }
+    nav ul{
+        width: 30%;
+    }
+    nav ul a li{
+    font-size: 16px;
+    }
+    nav ul a li:hover{
+        color: #ffda1b;
+    }
+    nav button{
+        font-size: 16px;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        height: 600PX;
+        padding: 10px 30px;
+    }
+    .right{
+        height: 100%;
+        width: 60%;
+        padding:50px 30px;
+    }
+    .right h1{
+        width: 100%;
+        font-size: 45px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 60px;
+    }
+    .left{
+        width: 450px;
+    }
+    .radio {
+        display: flex;
+        justify-content:left;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .radio label{
+        font-size: 13px;
+    }
+    .radio label:nth-child(2){
+        margin-left: 20px;
+    }
+    .radio .checked{
+        width: 20px;
+        height: 20px;
+    }
+    .checked::before{
+        width: 20px;
+        height: 20px;
+    }
+     .input:checked + .checked::before{
+        display: block;
+    }
+    .left button{
+        font-size: 16px;
+    }
+    .left .img{
+        border-radius: 5000px;
+        position: absolute;
+        top: 120px;
+        right: 50px;
+    }
+    .dices{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between; 
+    }
+    .sub-dices{
+        padding: 20px;
+        height: 350px;
+    }
+    .sub-dices:hover{
+        transform: translateY(-10%);
+        height: 350px;
+    }
+    .sub-dices h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        color: #f7f7f8;
+    }
+    .sub-dices h2{
+       font-size: 18px;
+       font-weight: 400px;
+       margin-top: 20px;
+       color: #ffffff;
+    
+    }
+    .sub-dices p{
+        font-size: 16px;
+        font-weight: 400px;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+}
+@media screen and (max-width :770px){
+    nav{
+        padding: 10px 20px;
+    }
+    nav img{
+        width: 100px;
+    }
+    nav ul{
+        width: 30%;
+    }
+    nav ul a li{
+    font-size: 13px;
+    }
+    nav ul a li:hover{
+        color: #ffda1b;
+    }
+    nav button{
+        font-size: 13px;
+        width: 120px;
+        height: 35px;
+    }
+    header{
+        width: 100%;
+        height: 400PX;
+        padding: 2px 10px;
+    }
+    .right{
+        height: 100%;
+        width: 60%;
+        padding:30px 20px;
+    }
+    .right h1{
+        width: 100%;
+        font-size: 35px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 60px;
+    }
+    .left{
+        width: 400px;
+    }
+    .radio {
+        display: flex;
+        justify-content:left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .radio label{
+        font-size: 10px;
+    }
+    .radio label:nth-child(2){
+        margin-left: 20px;
+    }
+    .left form input[type="text"]{
+        height: 40px;
+    }
+    .left form input::placeholder{
+        font-size: 12px;
+    }
+    .radio .checked{
+        width: 15px;
+        height: 15px;
+    }
+    .checked::before{
+        width: 15px;
+        height: 15px;
+    }
+     .input:checked + .checked::before{
+        display: block;
+    }
+    .left button{
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .left .img{
+        border-radius: 5000px;
+        position: absolute;
+        top: 120px;
+        right: 50px;
+    }
+    .dices{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between; 
+    }
+    .sub-dices{
+        padding: 15px;
+        height: 250px;
+    }
+    .sub-dices:hover{
+        transform: translateY(-10%);
+        height: 250px;
+    }
+    .sub-dices h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #f7f7f8;
+    }
+    .sub-dices h2{
+       font-size: 13px;
+       font-weight: 400px;
+       margin-top: 20px;
+       color: #ffffff;
+    
+    }
+    .sub-dices p{
+        font-size: 10px;
+        font-weight: 400px;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+    .sub-dices:nth-child(1) img{
+        width: 120px;
+    }
+    .sub-dices:nth-child(2) img{
+        width: 40px;
+    }
+    .sub-dices:nth-child(3) img{
+        width: 35px;
+    }
+    .sub-dices:nth-child(4) img{
+        width: 30px;
+    }
+}
+@media screen and (max-width :500px){
+    nav{
+        padding: 10px 20px;
+    }
+    nav img{
+        width: 100px;
+    }
+    nav ul{
+        width: 30%;
+    }
+    nav ul a li{
+    font-size: 13px;
+    }
+    nav ul a li:hover{
+        color: #ffda1b;
+    }
+    nav button{
+        font-size: 13px;
+        width: 120px;
+        height: 35px;
+    }
+    header{
+        width: 100%;
+        height:fit-content;
+        padding: 2px 10px;
+        flex-direction: column;
+        background-size: contain;
+    background-repeat: no-repeat;
+    }
+    .right{
+        height: 100%;
+        width: 100%;
+        padding:30px 20px;
+    }
+    .right h1{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 0px;
+    }
+    .left{
+        width: 300px;
+        margin-top: 0px;
+    }
+    .radio {
+        display: flex;
+        justify-content:left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .radio label{
+        font-size: 10px;
+    }
+    .radio label:nth-child(2){
+        margin-left: 20px;
+    }
+    .left form input[type="text"]{
+        height: 40px;
+    }
+    .left form input::placeholder{
+        font-size: 12px;
+    }
+    .radio .checked{
+        width: 15px;
+        height: 15px;
+    }
+    .checked::before{
+        width: 15px;
+        height: 15px;
+    }
+     .input:checked + .checked::before{
+        display: block;
+    }
+    .left button{
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .left .img{
+        border-radius: 5000px;
+        position: absolute;
+        top: 120px;
+        right: 50px;
+    }
+    .dices{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between; 
+    }
+    .sub-dices{
+        padding: 15px;
+        height: 250px;
+    }
+    .sub-dices:hover{
+        transform: translateY(-10%);
+        height: 250px;
+    }
+    .sub-dices h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #f7f7f8;
+    }
+    .sub-dices h2{
+       font-size: 13px;
+       font-weight: 400px;
+       margin-top: 20px;
+       color: #ffffff;
+    
+    }
+    .sub-dices p{
+        font-size: 10px;
+        font-weight: 400px;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+    .sub-dices:nth-child(1) img{
+        width: 120px;
+    }
+    .sub-dices:nth-child(2) img{
+        width: 40px;
+    }
+    .sub-dices:nth-child(3) img{
+        width: 35px;
+    }
+    .sub-dices:nth-child(4) img{
+        width: 30px;
+    }
+}
